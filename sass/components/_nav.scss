@@ -3,24 +3,24 @@
 .site-nav {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 12px;
     margin-bottom: auto;
     
 }
 
 .site-nav__item {
-    font-family: 'Roboto' sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
+	font-family: "Raleway";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.7px;
 }
 
 .site-nav__link {
     display: flex;
     align-items: center;
-    color: $color-primary;
+    color: $color-white;
     transition: color 250ms $timing-function;
     text-decoration: none;
 
@@ -30,9 +30,6 @@
     }
 }
 
-.current {
-    color: $color-accent;
-}
 @media screen and (max-width: 479px) {
 .site-nav__item {
     font-size: 24px;

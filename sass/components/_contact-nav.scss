@@ -1,0 +1,89 @@
+// КОНТАКТИ САЙТУ
+
+
+.contact-nav__item {
+   font-family: "Raleway";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.7px;
+}
+
+.contact-nav__link {
+	font-family: "Raleway";
+	font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    transition: color 250ms $timing-function;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
+}
+.contact-nav__icon {
+    display: none;
+    fill: currentColor;
+    margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+.contact-nav {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.contact-nav__link{
+    font-size: 24px;
+}
+.contact-nav__link--tel{
+    color: $color-accent;
+    font-size: 34px;
+    padding-bottom: 18px;
+}
+}
+@media screen and (max-width: 479px) {
+.contact-nav__link--tel {
+        color: $color-accent;
+        font-size: 24px;
+        margin-bottom: auto;
+    }
+    
+    }
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+.contact-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 21px 0;
+}
+.contact-nav__item {
+    font-size: 12px;
+    line-height: 1.17;
+}
+.contact-nav__icon {
+    display: flex;
+    fill: currentColor;
+    margin-right: 10px;
+}
+}
+// Планшетна версія 1200px
+@media screen and (min-width: 1200px) {
+
+.contact-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 32px 0;
+    }
+.contact-nav__item {
+    font-size: 14px;
+    line-height: 1.14;
+    
+}
+
+}

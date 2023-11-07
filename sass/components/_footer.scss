@@ -4,7 +4,7 @@
 
 // Мобільна версія 480px
 .footer {
-    background-color: $color-bgr-footer;
+    background-color: $color-primary;
 
 }
 .footer__main{
@@ -27,7 +27,7 @@
 }
 
 .footer__link {
-    color: $color-text-address;
+    color: $color-white;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;

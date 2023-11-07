@@ -19,48 +19,112 @@
 <body>
 	<header>
 		<section>
-			<div>
-				<a href="">AnCosmo</a>
-				<p>cosmetolog| szkolenia</p>
-			</div>
-			<nav>
-				<ul>
-					<li>Послуги</li>
-					<li>Прайс</li>
-					<li>Каталог</li>
-					<li>Блог</li>
-					<li>Контакти</li>
-				</ul>
-			</nav>
+			<header class="page-header">
+				<div class="container responsive">
+					<div class="header">
+						<a href="./index.html" class="logo"> <span class="logo__span">An</span>Cosmo</a>
+						<button type="button" class="navigation__btn" aria-expanded="false" aria-controls="menu-container"
+							data-menu-button>
+							<svg width="40" height="40" aria-label="Перемикач мобільного меню">
+								<use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+								<use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+							</svg>
+						</button>
+
+						<div class="menu-container" id="menu-container" data-menu>
+							<ul class="site-nav">
+								<li class="site-nav__item site-nav__item--line">
+									<a href="./index.html" class="site-nav__link">Послуги</a>
+								</li>
+								<li class="site-nav__item">
+									<a href="./portfolio.html" class="site-nav__link">Прайс</a>
+								</li>
+								<li class="site-nav__item">
+									<a href="./portfolio.html" class="site-nav__link">Каталог</a>
+								</li>
+								<li class="site-nav__item">
+									<a href="./portfolio.html" class="site-nav__link">Блог</a>
+								</li>
+								<li class="site-nav__item">
+									<a href="/" class="site-nav__link">Контакти</a>
+								</li>
+							</ul>
+							<ul class="contact-nav">
+								<li class="contact-nav__item">
+									<a href="mailto:info@devstudio.com" class="contact-nav__link">
+										<svg class="contact-nav__icon" width="16" height="12">
+											<use href="./images/symbol-defs.svg#icon-envelope"></use>
+										</svg>
+										ancosmo@gmail.com
+									</a>
+								</li>
+								<li class="contact-nav__item">
+									<a href="https://maps.app.goo.gl/4RNPj5wMYpJQbuyz6" target="_blank"
+										class="contact-nav__link contact-nav__link--tel">
+										<svg class="contact-nav__icon" width="10" height="16">
+											<use href="./images/symbol-defs.svg#icon-location2"></use>
+										</svg>
+										5 lipca 36a, Szczecin, Poland
+									</a>
+								</li>
+								<li class="contact-nav__item">
+									<a href="tel:+380961111111" class="contact-nav__link contact-nav__link--tel">
+										<svg class="contact-nav__icon" width="10" height="16">
+											<use href="./images/symbol-defs.svg#icon-smartphone"></use>
+										</svg>
+										+38 096 111 11 11
+									</a>
+								</li>
+							</ul>
+							<ul class="social-nav">
+								<li class="social-nav__item">
+									<a href="" class="social-nav__link">Instagram</a>
+								</li>
+								<li class="social-nav__item">
+									<a href="" class="social-nav__link">Facebook</a>
+								</li>
+								<li class="social-nav__item">
+									<a href="" class="social-nav__link">TikTok</a>
+								</li>
+								<li class="social-nav__item">
+									<a href="" class="social-nav__link">Telegram</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
 		</section>
 
 
 	</header>
 	<main>
-		<section>
-			<div class="hero">
-				<h1>Косметологічний кабінет в Щецині</h1>
-				<div>
-					<p>5 lipca 36a, Szczecin, Poland</p>
-					<p>380930000000</p>
+
+		<div class="ovarlay">
+			<section>
+				<div class="hero">
+					<h1 class="hero__title">Косметологічний кабінет в Щецині</h1>
+					<div class="hero__container">
+						<p>5 lipca 36a, Szczecin, Poland</p>
+						<p>380930000000</p>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
+
 		<section>
-			<ul>
-				<li><img src="" alt="">
-					<p></p>
-				</li>
-				<li><img src="" alt="">
-					<p></p>
-				</li>
-				<li><img src="" alt="">
-					<p></p>
-				</li>
-				<li><img src="" alt="">
-					<p></p>
-				</li>
-			</ul>
+			<div class="advantages">
+				<ul>
+					<li><img src="./images/woman.png" alt="Вища мед.освіта">
+						<p>Вища мед.освіта</p>
+					</li>
+					<li><img src="./images/woman.png" alt="Вища мед.освіта">
+						<p>Натурально</p>
+					</li>
+				</ul>
+			</div>
+
+
 		</section>
 		<section>
 			<h2>Послуги</h2>
@@ -264,7 +328,7 @@
 
 	</main>
 	<footer></footer>
-
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
