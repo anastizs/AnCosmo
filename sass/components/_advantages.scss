@@ -1,0 +1,29 @@
+.advantages{
+	margin: 40px 0 40px 0;
+
+}
+.advantages__items{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+}
+.advantages__item{
+	display: flex;
+	flex-direction: column;
+	width: 194px;
+	align-items: center;
+	justify-content: center;
+
+}
+.advantages__text{
+	color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 27px;
+	
+}

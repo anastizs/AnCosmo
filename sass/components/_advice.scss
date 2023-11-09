@@ -1,0 +1,70 @@
+.advice{
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0;
+}
+.advice__title{
+	color: $color-accent;
+	font-family: Playfair Display;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+.advice__text{
+	font-family: Raleway;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 24px;
+}
+  .form {
+      align-self: center;
+    }
+    .form__input {
+      width: clamp(120px, 50vw, 390px);
+      height: 2.5rem;
+      padding: 0 20px;
+      border: 1px solid $color-black;
+      border-radius: 2px;
+      margin: 10px auto;
+      transition: all 250ms;
+		cursor: pointer;
+      @media (min-width: 768px) {
+        width: clamp(120px, 35vw, 420px);
+      }
+      
+      // This is basically saying when the form__input class is in focus
+      &:focus {
+        outline: none;
+        border-top-color: rgba(0,0,0,0.1);
+      }
+     &:focus + .form__label, &:not(:placeholder-shown) + .form__label {
+        transform: translateY(-4.50rem) scale(1);
+        color: $color-accent;
+      }
+     &::placeholder {
+          display: none;
+          color: transparent;
+      }
+      
+     &:not(:placeholder-shown) {
+        border-top-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .form__label {
+      color: #BEBEBE;
+font-family: Raleway;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+      display: block;
+     transform: translate(1.25rem,-2.5rem);
+      transform-origin: 0 0;
+      transition: all 500ms;pointer-events: none; 
+    }
+    
