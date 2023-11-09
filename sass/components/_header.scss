@@ -3,7 +3,7 @@
 
 .page-header {
     position: relative;
-    border-bottom: 1px solid #ECECEC; 
+    border-bottom: 1px solid #b3b0b0; 
 }
 .header {
     display: flex;
@@ -14,11 +14,10 @@
     display: inline-flex;
     margin: 10px 0;
 	 cursor: pointer;
-
-    
     padding: 0;
     border: none;
     background-color: transparent;
+	 fill: $color-white;
 
     & .icon-close{
     display: none;

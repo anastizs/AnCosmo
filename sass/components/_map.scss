@@ -1,0 +1,14 @@
+.map__title{
+color: $color-accent;
+font-family: "Playfair Display";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 20px 0;
+}
+.map__iframe{
+	width: 360px;
+	height: 360px;
+	border-radius: 2px;
+}

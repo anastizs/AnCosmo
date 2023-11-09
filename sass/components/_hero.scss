@@ -12,12 +12,12 @@
 }
 
 .hero__title {
+	font-family: "Playfair Display";
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
-    text-align: center;
+    text-align: end;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: $color-accent;
 }
 .hero__container{

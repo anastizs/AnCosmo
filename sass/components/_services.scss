@@ -4,7 +4,7 @@
 
 .services__title{
 	color: $color-accent;
-	font-family: Raleway;
+	font-family: "Playfair Display";
 	font-size: 36px;
 	font-style: normal;
 	font-weight: 700;
@@ -101,12 +101,6 @@
 	cursor: pointer;
 }
 
-// .prodact__title {
-// 	font-size: 16px;
-// 	line-height: 1.9;
-// 	color: $color-secondary;
-// 	cursor: pointer;
-// }
 @media screen and (min-width: 480px) {
 .prodact__text {
 	padding: 77px 24px;
