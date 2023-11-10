@@ -60,10 +60,35 @@ $distance: 1000px;
     margin-right: 10px;
   }
 }
+.gallery__box{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+}
+.gallery__box > img {
+	width: 100%;
+}
+
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
+	.gallery__box > img {
+		width: 48%;
+	}
 }
 
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
+	.gallery__box > img {
+		width: 30%;
+	}
+}
+// Десктоптна версія 1920px
+@media screen and (min-width: 1920px) {
+	.gallery__box > img {
+		width: 24%;
+	}
 }
