@@ -173,6 +173,21 @@ ul {
     margin: 120px 0 0 auto;
   }
 }
+@media screen and (min-width: 1920px) {
+  .hero {
+    padding-top: 140px;
+    padding-bottom: 32px;
+  }
+  .hero__title {
+    font-size: 120px;
+    padding-right: 60px;
+  }
+  .hero__container {
+    font-size: 28px;
+    width: 900px;
+    margin: 180px 60px 0 auto;
+  }
+}
 .contact-nav__item {
   font-size: 18px;
   font-style: normal;
@@ -295,6 +310,12 @@ ul {
   .ovarlay {
     max-width: 1600px;
     height: 600px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .ovarlay {
+    max-width: 1920px;
+    height: 840px;
   }
 }
 .site-nav {
@@ -560,6 +581,11 @@ ul {
   }
   .prodact__text {
     padding: 12px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .card-set {
+    gap: 10px;
   }
 }
 .advice {
