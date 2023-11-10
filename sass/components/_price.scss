@@ -5,4 +5,60 @@ font-size: 36px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+margin: 60px 0 20px 0;
 }
+
+
+.responstable {
+	margin: 1em 0;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 4px;
+	border: $color-white;
+
+	tr {
+	border: 1px solid #D9E4E6; 
+	  &:nth-child(odd) { // highlight the odd rows with a color
+		background-color: $color-white;
+		color: $color-primary;
+	}  
+	}
+
+	th {
+	display: none;
+	border: 1px solid #FFF;
+	background-color: $color-accent;
+	padding: 16px;
+	display: table-cell;
+	text-align: center;
+	font-family: "Playfair Display";
+	font-size: 22px;
+	color: $color-white;
+	}
+	
+	}
+
+	td {
+	  display: block; 
+	  word-wrap: break-word;
+	font-size: 16px;
+	  max-width: 7em;
+	  &:first-child { 
+		 display: table-cell; 
+		//  text-align: center;
+		 border-right: 1px solid #D9E4E6;
+	  }
+	  @media (min-width: 390px) {
+		 border: 1px solid #D9E4E6;
+	  }
+	}
+ 
+	th, td {
+	  text-align: left;
+	  margin: 8px 16px;  
+	  @media (min-width: 390px) {
+		 display: table-cell; // show the table as a normal table for tablet and desktop
+		 padding: 8px;
+	  }
+	}  
+

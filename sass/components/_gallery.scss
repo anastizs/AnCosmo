@@ -8,6 +8,7 @@ $distance: 1000px;
 #carousel {
   perspective: $distance;
   overflow: hidden;
+  margin: 60px 0;
 
   #scene {
     width: $slide-width;
