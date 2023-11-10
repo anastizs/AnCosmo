@@ -2,31 +2,31 @@
 
 
 .logo {
-    color: $color-white;
-    font-family: "Post No Bills Jaffna SemiBold";
-	 font-size: 36px;
-	 font-style: normal;
-	 font-weight: 600;
-	 line-height: normal;
-    text-decoration: none;
-    margin: 6px 0;
-        
+   color: $color-white;
+   font-family: "Post No Bills Jaffna SemiBold";
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+   text-decoration: none;
+   margin: 6px 0;
+
 }
 
 .logo__span {
-    color: $color-accent;
+   color: $color-accent;
 }
 // Планшетна версія 768px
 @media screen and (min-width: 768px) {
 .logo{
-    margin: 26px 0;
+	font-size: 44px;
+   margin: 26px 0;
 }
 }
 
 // Планшетна версія 1200px
 @media screen and (min-width: 1200px) {
 .logo {
-    font-size: 26px;
-    line-height: 1.2;
+   font-size: 48px;
 }
 }

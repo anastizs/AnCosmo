@@ -15,3 +15,27 @@ margin: 0 0 20px 0;
 	height: 360px;
 	border-radius: 2px;
 }
+
+// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+	.map__iframe{
+		width: 738px;
+		height: 600px;
+		border-radius: 2px;
+	}
+	}
+	
+// Десктоптна версія 1200px
+@media screen and (min-width: 1200px) {
+	.map{
+		margin: 80px 0 0 0;
+		}
+	.map__title{
+		font-size: 44px;
+		margin: 0 0 40px 0;
+	}
+	.map__iframe{
+		width: 1170px;
+		height: 560px;
+		border-radius: 2px;
+	}}

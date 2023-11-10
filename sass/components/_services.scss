@@ -125,12 +125,16 @@
 
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
+.services__title{
+	font-size: 44px;
+	margin: 80px 0 40px 0;
+	}
 .prodact {
 	width: 370px;
 }
 
 .prodact__text {
-	padding: 63px 24px;
+	padding: 12px;
 }
 }
 

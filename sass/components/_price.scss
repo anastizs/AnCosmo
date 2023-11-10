@@ -1,3 +1,7 @@
+.price{
+	display: flex;
+	flex-direction: column;
+}
 .price__title{
 	color: $color-accent;
 font-family: "Playfair Display";
@@ -39,26 +43,46 @@ margin: 60px 0 20px 0;
 	}
 
 	td {
-	  display: block; 
-	  word-wrap: break-word;
+	display: block; 
+	word-wrap: break-word;
 	font-size: 16px;
-	  max-width: 7em;
-	  &:first-child { 
-		 display: table-cell; 
+	max-width: 7em;
+	&:first-child { 
+		display: table-cell; 
 		//  text-align: center;
-		 border-right: 1px solid #D9E4E6;
-	  }
-	  @media (min-width: 390px) {
-		 border: 1px solid #D9E4E6;
-	  }
+		border-right: 1px solid #D9E4E6;
 	}
- 
+	@media (min-width: 390px) {
+		border: 1px solid #D9E4E6;
+	}
+	}
+
 	th, td {
-	  text-align: left;
-	  margin: 8px 16px;  
-	  @media (min-width: 390px) {
-		 display: table-cell; // show the table as a normal table for tablet and desktop
-		 padding: 8px;
-	  }
+	text-align: left;
+	margin: 8px 16px;  
+	@media (min-width: 390px) {
+		display: table-cell; // show the table as a normal table for tablet and desktop
+		padding: 8px;
+	}
 	}  
 
+	// Планшетна версія 768px
+@media screen and (min-width: 768px) {
+	.tables{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.responstable {
+		height: 100%;
+		width: 50%;
+		} 
+	}
+	
+	// Десктоптна версія 1200px
+	@media screen and (min-width: 1200px) {
+		.price__title{
+		font-size: 44px;
+		margin: 80px 0 40px 0;
+	}
+	}

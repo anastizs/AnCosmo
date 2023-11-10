@@ -3,22 +3,22 @@
 // Мобільна версія 390px
 
 .hero-container {
-    background-color: $color-primary;
+   background-color: $color-primary;
 }
 
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
+   padding-top: 118px;
+   padding-bottom: 118px;
 }
 
 .hero__title {
 	font-family: "Playfair Display";
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: end;
-    letter-spacing: 0.06em;
-    color: $color-accent;
+   font-weight: 900;
+   font-size: 26px;
+   line-height: 1.62;
+   text-align: end;
+   letter-spacing: 0.06em;
+   color: $color-accent;
 }
 .hero__container{
 	display: none;
@@ -26,24 +26,38 @@
 
 
 // Планшетна версія 768px
-@media screen and (min-width: 768px){}
-    
+@media screen and (min-width: 768px){
+	.hero {
+   padding-top: 164px;
+   padding-bottom: 60px;
+}
+
+.hero__title {
+   font-size: 46px;
+}
+.hero__container{
+	width: 420px;
+	margin: 80px 0 0 auto;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	font-family: "Raleway";
+}}
 
 
 
 
 // Десктоптна версія 1200px
 @media screen and (min-width: 1200px) {
-.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-    
-.hero__title {
-    font-size: 44px;
-    line-height: 1.36;
-}
-.hero__btn {
-    padding: 10px 32px;
-}
-}
+	.hero {
+		padding-top: 140px;
+		padding-bottom: 32px;
+	}
+	
+	.hero__title {
+		font-size: 88px;
+	}
+	.hero__container{
+		width: 600px;
+		margin: 120px 0 0 auto;
+	}}
