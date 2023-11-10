@@ -1,12 +1,11 @@
 .feedback{
 	background-color: $color-primary;
    padding: 60px 0 0 0;
-//    border-radius: 50px;
    width: 100%;
    height: 100%;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: column;
+	align-items: start;
 }
 .feedback__title{
 	color: $color-accent;
@@ -15,7 +14,6 @@ font-size: 36px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-text-align: start;
    margin: 0 0 20px 0;
 }
 
@@ -27,6 +25,8 @@ text-align: start;
 	text-align: center;
 	color: $color-white;
 	padding: 0;
+	justify-content: center;
+	margin: 0 auto;
 	}
 	
 
@@ -175,7 +175,7 @@ text-align: start;
 	border-radius: 50px;
 }
 
-.feedback_title {
+.feedback__title {
 	font-size: 48px;
 	font-weight: 600;
 }
@@ -194,7 +194,7 @@ text-align: start;
 	border-radius: 50px;
 }
 
-.feedback_title {
+.feedback__title {
 	width: 616px;
 	font-size: 44px;
    margin: 80px 0 40px 0;
@@ -205,3 +205,17 @@ text-align: start;
 	width: 1170px;
 }
 }
+// Десктоптна версія 1920px
+@media screen and (min-width: 1920px) {
+	
+	.feedback__title {
+		width: 1890px;
+		font-size: 44px;
+		margin: 80px 0 40px 0;
+	}
+	
+	
+	.wrapper {
+		width: 1890px;
+	}
+	}
